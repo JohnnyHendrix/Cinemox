@@ -1,5 +1,6 @@
 package com.example.android.popularmovies;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.android.popularmovies.utilities.MovieDBJsonUtilities;
 import com.example.android.popularmovies.utilities.NetworkUtils;
@@ -35,7 +37,7 @@ import java.util.ArrayList;
  * limitations under the License.
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MovieAdapter.MovieAdapterOnClickHandler {
 
     private RecyclerView mRecyclerView;
 
@@ -66,12 +68,18 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(),3);
         mRecyclerView.setLayoutManager(layoutManager);
 
-        mMovieAdapter = new MovieAdapter(getApplicationContext(), urlList);
+        mMovieAdapter = new MovieAdapter(getApplicationContext(), urlList, this);
         mRecyclerView.setAdapter(mMovieAdapter);
     }
 
+    @Override
+    public void onClick(Movie movie) {
+        Context context = this;
+        Toast.makeText(context, movie.getTitle(), Toast.LENGTH_SHORT).show();
+    }
+
     private void showMovieDataView() {
-        //movieGridView.setVisibility(View.VISIBLE);
+        //.setVisibility(View.VISIBLE);
         mError.setVisibility(View.INVISIBLE);
     }
 

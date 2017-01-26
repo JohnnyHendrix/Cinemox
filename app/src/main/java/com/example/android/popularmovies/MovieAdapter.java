@@ -32,12 +32,19 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
     private ArrayList<Movie> movies;
     private Context mContext;
 
-    public MovieAdapter(Context context, ArrayList<Movie> movies) {
-        mContext = context;
-        this.movies = movies;
+    private final MovieAdapterOnClickHandler mClickHandler;
+
+    public interface MovieAdapterOnClickHandler {
+        void onClick(Movie movie);
     }
 
-    public class MovieAdapterViewHolder extends RecyclerView.ViewHolder {
+    public MovieAdapter(Context context, ArrayList<Movie> movies, MovieAdapterOnClickHandler clickHandler) {
+        mContext = context;
+        this.movies = movies;
+        mClickHandler = clickHandler;
+    }
+
+    public class MovieAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         //private TextView mTitle;
         private ImageView mPosterView;
 
@@ -45,6 +52,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
             super(view);
             //   mTitle = (TextView)view.findViewById(R.id.tv_movie_title);
             mPosterView = (ImageView) view.findViewById(R.id.iv_poster_movie);
+            view.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            int adapterPosition = getAdapterPosition();
+            Movie movie = movies.get(adapterPosition);
+            mClickHandler.onClick(movie);
         }
     }
 

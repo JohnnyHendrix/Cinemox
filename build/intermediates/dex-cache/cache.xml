@@ -97,7 +97,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="4ae8cbaa7e7ebe1e184a07b0dd05647f633efab9">
+        sha1="238e3eb26270acaa4d9273b0627369b592e3fd86">
         <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_32477ccfd9afd7f80f9d862918f2ce522ee80e8a/classes.dex" />
     </item>
     <item
@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c4d57c4f654beba595635f985548b4362a29e8b7">
+        sha1="31bf02c6b537863aed52e23389e618aef2845ed6">
         <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0f93ba1e23c547fe7ad8224db1a357f3369fcf7a/classes.dex" />
     </item>
 

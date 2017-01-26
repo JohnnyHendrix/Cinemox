@@ -8,7 +8,9 @@
         android:id="@+id/iv_poster_movie"
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="1dp"/>
 <!--    <TextView
         android:id="@+id/tv_movie_title"
         android:layout_gravity="center"
