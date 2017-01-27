@@ -3,6 +3,24 @@
 
     <item
         is-multidex="true"
+        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_670ae153ab3160fcd996138f85c3f9b8a7f1fac6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_1106d1b41e0ccd54e36bf6a89819be1441287877/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -12,12 +30,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_61b6c48790aba156e0aed8cc2193b057f91d39b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_f2e9a54e19c8340a9695450a3aa11e9f9c8987b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cf0889d58d227b64200477a2e34051b4bb0386c">
+        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_32477ccfd9afd7f80f9d862918f2ce522ee80e8a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,6 +75,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_cacddea35bd155ddabcb9e8a91127179a0447405/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/jean-marchendrikse/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
         jumboMode="true"
         optimize="true"
@@ -57,60 +102,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/jean-marchendrikse/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_bbb89722ab0c5455e47a448b1f0f27f5b2d95288/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_670ae153ab3160fcd996138f85c3f9b8a7f1fac6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_1106d1b41e0ccd54e36bf6a89819be1441287877/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_61b6c48790aba156e0aed8cc2193b057f91d39b9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="238e3eb26270acaa4d9273b0627369b592e3fd86">
-        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_32477ccfd9afd7f80f9d862918f2ce522ee80e8a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_cacddea35bd155ddabcb9e8a91127179a0447405/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -120,12 +111,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/jean-marchendrikse/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/1.7.2/112366d8158749e25532ebce162232c6e0fb20a5/gson-1.7.2.jar"
+        jar="/Users/jean-marchendrikse/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="112366d8158749e25532ebce162232c6e0fb20a5">
-        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-1.7.2_a7d69a63412263eb323c22c627b93e430ce3fbc2/classes.dex" />
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_bbb89722ab0c5455e47a448b1f0f27f5b2d95288/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -133,8 +124,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="31bf02c6b537863aed52e23389e618aef2845ed6">
+        sha1="361e531d2e0c2f9a56c6258845f99052fda069fb">
         <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0f93ba1e23c547fe7ad8224db1a357f3369fcf7a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jean-marchendrikse/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/1.7.2/112366d8158749e25532ebce162232c6e0fb20a5/gson-1.7.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="112366d8158749e25532ebce162232c6e0fb20a5">
+        <dex dex="/Users/jean-marchendrikse/Desktop/popularmovies/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-1.7.2_a7d69a63412263eb323c22c627b93e430ce3fbc2/classes.dex" />
     </item>
 
 </items>

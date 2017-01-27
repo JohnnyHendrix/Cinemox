@@ -1,6 +1,7 @@
 package com.example.android.popularmovies;
 
 import java.util.ArrayList;
+
 import com.google.gson.Gson;
 
 /**
@@ -12,6 +13,7 @@ public class Movie {
     private String title;
     private String overview;
     private String poster_path;
+    private String posterUrl;
     private boolean adult;
     private String release_date;
     private int[] genre_ids;
@@ -34,7 +36,7 @@ public class Movie {
         this.overview = overview;
     }
 
-    public void setPosterUrl(String poster_path) {
+    public void setPosterPath(String poster_path) {
         this.poster_path = poster_path;
     }
 
@@ -94,7 +96,7 @@ public class Movie {
         return overview;
     }
 
-    public String getPosterUrl() {
+    public String getPoster_path() {
         return poster_path;
     }
 
@@ -144,5 +146,29 @@ public class Movie {
 
     public boolean isVideo() {
         return video;
+    }
+
+    public void setPosterUrl(String basicUrl, int size, String path) {
+        switch (size) {
+            case 92:
+                break;
+            case 154:
+                break;
+            case 185:
+                break;
+            case 342:
+                break;
+            case 500:
+                break;
+            case 780:
+                break;
+            default:
+                size = 92;
+        }
+        posterUrl = basicUrl + "w" + size + path;
+    }
+
+    public String getPosterUrl() {
+        return posterUrl;
     }
 }

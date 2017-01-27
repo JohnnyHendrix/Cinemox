@@ -84,26 +84,8 @@ public final class NetworkUtils {
         return url;
     }
 
-    public static String getBasicPosterUrl(int size) {
-        String posterSize = "";
-        switch (size) {
-            case 92:
-                break;
-            case 154:
-                break;
-            case 185:
-                break;
-            case 342:
-                break;
-            case 500:
-                break;
-            case 780:
-                break;
-            default:
-                size = 92;
-        }
-
-        return BASIC_POSTER_URL + "w" + size;
+    public static String getBasicPosterUrl() {
+        return BASIC_POSTER_URL;
     }
 
     /**

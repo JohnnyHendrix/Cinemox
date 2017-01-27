@@ -2,4 +2,5 @@
     <string name="action_refresh">Refresh</string>
     <string name="app_name">Popular Movies</string>
     <string name="error_message">Something went wrong. Please try again.</string>
+    <string name="movie_title"></string>
 </resources>

@@ -1,6 +1,7 @@
 package com.example.android.popularmovies;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -75,7 +76,12 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     @Override
     public void onClick(Movie movie) {
         Context context = this;
-        Toast.makeText(context, movie.getTitle(), Toast.LENGTH_SHORT).show();
+        Class destinationClass = DetailActivity.class;
+        Intent intentToStartDetailActivity = new Intent(context, destinationClass);
+        Gson gson = new Gson();
+        String jsonString = gson.toJson(movie);
+        intentToStartDetailActivity.putExtra(Intent.EXTRA_TEXT, jsonString);
+        startActivity(intentToStartDetailActivity);
     }
 
     private void showMovieDataView() {
@@ -138,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
                 for (String jsonMovie : jsonMovieList) {
                     Gson gson = new Gson();
                     Movie movie = gson.fromJson(jsonMovie, Movie.class);
-                    movie.setPosterUrl(NetworkUtils.getBasicPosterUrl(92) + movie.getPosterUrl());
+                    movie.setPosterUrl(NetworkUtils.getBasicPosterUrl(), 92, movie.getPoster_path());
                     movies.add(movie);
                 }
 
