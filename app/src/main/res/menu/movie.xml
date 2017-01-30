@@ -6,4 +6,10 @@
         android:orderInCategory="1"
         android:title="@string/action_refresh"
         app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="1"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/pref_menu_bar"
+        app:showAsAction="ifRoom"></item>
 </menu>

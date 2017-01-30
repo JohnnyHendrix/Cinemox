@@ -10,10 +10,25 @@ import com.example.android.popularmovies.utilities.NetworkUtils;
 import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
+/**
+ * Created by Jean-Marc Hendrikse on 24.01.17.
+ * <p>
+ * * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 public class DetailActivity extends AppCompatActivity {
 
     private TextView mMovieDescriptionDisplay;
-    private ImageView mBackgroundPoster;
+    private ImageView mMoviePoster;
     private TextView mMovieTitle;
     private String mDescription;
     private TextView mReleaseDate;
@@ -25,14 +40,13 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail_movie);
 
         mMovieDescriptionDisplay = (TextView) findViewById(R.id.tv_display_description);
-        mBackgroundPoster = (ImageView) findViewById(R.id.iv_bg_poster);
+        mMoviePoster = (ImageView) findViewById(R.id.iv_bg_poster);
         mMovieTitle = (TextView) findViewById(R.id.tv_movie_title);
         mReleaseDate = (TextView) findViewById(R.id.tv_release_date);
         mUserRating = (TextView) findViewById(R.id.tv_user_rating);
 
         Intent intentThatStartedThisActivity = getIntent();
 
-        // COMPLETED (2) Display the weather forecast that was passed from MainActivity
         if (intentThatStartedThisActivity != null) {
             if (intentThatStartedThisActivity.hasExtra(Intent.EXTRA_TEXT)) {
                 Gson gson = new Gson();
@@ -40,13 +54,12 @@ public class DetailActivity extends AppCompatActivity {
                 Movie movie = gson.fromJson(jsonString, Movie.class);
                 mDescription = movie.getDescription();
                 movie.setPosterUrl(NetworkUtils.getBasicPosterUrl(), 185, movie.getPoster_path());
-                Picasso.with(this).load(movie.getPosterUrl()).into(mBackgroundPoster);
+                Picasso.with(this).load(movie.getPosterUrl()).into(mMoviePoster);
                 setTitle(movie.getTitle());
                 mMovieTitle.setText(movie.getTitle());
                 mReleaseDate.setText(movie.getReleaseDate());
-                mUserRating.setText("user vote: " + movie.getVoteAverage());
+                mUserRating.setText("User Vote: " + movie.getVoteAverage());
                 mMovieDescriptionDisplay.setText(mDescription);
-
             }
         }
     }

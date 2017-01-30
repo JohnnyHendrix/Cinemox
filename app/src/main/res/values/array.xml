@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string-array name="order_by">
+        <item>"Most popular"</item>
+        <item>"Highest-rated"</item>
+    </string-array>
+    <string-array name="order_by_value">
+        <item>"popular"</item>
+        <item>"top_rated"</item>
+    </string-array>
+</resources>

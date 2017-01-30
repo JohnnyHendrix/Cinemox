@@ -3,4 +3,10 @@
     <string name="app_name">Popular Movies</string>
     <string name="error_message">Something went wrong. Please try again.</string>
     <string name="movie_title"></string>
+    <string name="pref_order_list">Order movies by</string>
+    <string name="preference_activity_name">Settings</string>
+    <string name="pref_menu_bar">Settings</string>
+
+    <string name="sp_key_order">oderBy</string>
+    <string name="default_pref">popular</string>
 </resources>

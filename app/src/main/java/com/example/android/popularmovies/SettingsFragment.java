@@ -1,5 +1,8 @@
 package com.example.android.popularmovies;
 
+import android.os.Bundle;
+import android.preference.PreferenceFragment;
+
 /**
  * Created by jean-marchendrikse on 28.01.17.
  * <p>
@@ -16,5 +19,12 @@ package com.example.android.popularmovies;
  * limitations under the License.
  */
 
-public class SettingsFragment {
+public class SettingsFragment extends PreferenceFragment {
+    @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+
+        /* Load the preferences from an XML resource*/
+        addPreferencesFromResource(R.xml.preferences);
+    }
 }

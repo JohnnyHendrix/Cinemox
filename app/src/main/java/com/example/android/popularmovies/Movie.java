@@ -5,7 +5,19 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 
 /**
- * Created by jean-marchendrikse on 25.01.17.
+ * Created by Jean-Marc Hendrikse on 24.01.17.
+ *
+ * * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 public class Movie {
@@ -25,6 +37,10 @@ public class Movie {
     private int vote_count;
     private boolean video;
     private double vote_average;
+    private String releaseYear;
+    private String releaseMonth;
+    private String releaseDay;
+
 
 
     public void setTitle(String title) {
@@ -73,7 +89,55 @@ public class Movie {
     }
 
     public void setReleaseDate(String release_date) {
-        this.release_date = release_date;
+        String [] date = release_date.split("-");
+        if (date.length == 3) {
+            releaseYear = date[0];
+            releaseMonth = date[1];
+            releaseDay = date [2];
+        }
+
+        switch (releaseMonth) {
+            case "1":
+                releaseMonth = "Jan";
+                break;
+            case "2":
+                releaseMonth = "Feb";
+                break;
+            case "3":
+                releaseMonth = "Mar";
+                break;
+            case "4":
+                releaseMonth = "Apr";
+                break;
+            case "5":
+                releaseMonth = "May";
+                break;
+            case "6":
+                releaseMonth = "Jun";
+                break;
+            case "7":
+                releaseMonth = "Jul";
+                break;
+            case "8":
+                releaseMonth = "Aug";
+                break;
+            case "9":
+                releaseMonth = "Sep";
+                break;
+            case "10":
+                releaseMonth = "Oct";
+                break;
+            case "11":
+                releaseMonth = "Nov";
+                break;
+            case "12":
+                releaseMonth = "Dec";
+                break;
+            default:
+        }
+
+
+        this.release_date = releaseMonth + " " + releaseYear;
     }
 
     public void setVideo(boolean video) {
