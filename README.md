@@ -1,5 +1,7 @@
 #  Cinemox
 
+The Popular Movies Android app, was made as part of Udacity's Android Developer Nanodegree Program. This app displays the most popular and top rated Movies. The user can save favourite movies locally and view them even when the device is offline. Furthermore, he can view movie details (such as rating, release date, duration, etc.), watch trailers, read reviews and share the movie with friends and others.
+
 ## Usage
 NOTE: This app uses <a href="https://www.themoviedb.org/documentation/api" target="_blank"> The Movie Database API</a> to retrieve movies. You must provide your own API key in order to build the app. Please, just paste it to:
     app/src/main/java/com/example/android/popularmovies/utilities/NetworkUtils.java
