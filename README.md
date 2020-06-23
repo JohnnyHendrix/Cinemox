@@ -1,5 +1,7 @@
 #  Cinemox
 
+![](https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+
 The Popular Movies Android app, was made as part of Udacity's Android Developer Nanodegree Program. This app displays the most popular and top rated Movies. The user can save favourite movies locally and view them even when the device is offline. Furthermore, he can view movie details (such as rating, release date, duration, etc.), watch trailers, read reviews and share the movie with friends and others.
 
 ## Usage
